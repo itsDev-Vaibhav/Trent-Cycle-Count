@@ -4,10 +4,10 @@ import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TrentCyclecountApiApplicationTests {
+public class TrentCyclecountApiApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 	}
 
 }

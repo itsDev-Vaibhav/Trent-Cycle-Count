@@ -9,7 +9,8 @@
 
 	<appender name="RollingFile"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>apilogs/trent-cycle-count-api1.log</file>
+	 	<file>apilogs/trent-cycle-count-api.log</file> 
+	<!-- 	<file>apilogs/${finalName}.log</file> -->
 		<encoder>
 			<pattern>%d [%thread] %-5level %-50logger{40} - %msg%n</pattern>
 		</encoder>

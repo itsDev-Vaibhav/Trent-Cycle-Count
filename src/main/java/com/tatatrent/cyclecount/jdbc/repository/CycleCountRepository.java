@@ -35,6 +35,7 @@ public class CycleCountRepository {
 				preparedstmt.setString(6, request.getAltSku());
 				preparedstmt.setInt(7, request.getQty());
 				preparedstmt.setString(8, request.getUser());
+				preparedstmt.setString(9, request.getLocId());
 //				logger.info("Returning from JdbcRepositoryImpl.getCount()");
 				int execute = preparedstmt.executeUpdate();
 				con.commit();
@@ -47,7 +48,6 @@ public class CycleCountRepository {
 				e.printStackTrace();
 			}
 		} catch (SQLException e1) {
-			// TODO Auto-generated catch block
 			logger.error("Something bad happend!" +e1);
 			e1.printStackTrace();
 		}

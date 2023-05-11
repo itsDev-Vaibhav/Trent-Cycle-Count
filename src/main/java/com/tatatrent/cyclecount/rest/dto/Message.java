@@ -18,9 +18,11 @@ public class Message {
 	
 	private Integer code;
 	private String status;
+	private String locationId;
 	
 	public Message() {
 		this.code  = HttpStatus.BAD_REQUEST.value();
-		this.status = "Some went wrong!";;
+		this.status = "Some went wrong!";
+		this.locationId = "";
 	}
 }

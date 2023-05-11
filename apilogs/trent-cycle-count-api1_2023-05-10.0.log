@@ -1,0 +1,171 @@
+2023-05-10 14:11:02,926 [restartedMain] INFO  c.t.c.TrentCyclecountApiApplication                - Starting TrentCyclecountApiApplication on vaibhavbhatnagar with PID 27100 (C:\Users\vaibhav.bhatnagar\Documents\workspace\jdk_1.7\trent-cyclecount-api\target\classes started by vaibhav.bhatnagar in C:\Users\vaibhav.bhatnagar\Documents\workspace\jdk_1.7\trent-cyclecount-api)
+2023-05-10 14:11:02,943 [restartedMain] INFO  c.t.c.TrentCyclecountApiApplication                - The following profiles are active: dev
+2023-05-10 14:11:03,007 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8508c2: startup date [Wed May 10 14:11:03 IST 2023]; root of context hierarchy
+2023-05-10 14:11:03,264 [background-preinit] INFO  o.h.validator.internal.util.Version                - HV000001: Hibernate Validator 5.3.6.Final
+2023-05-10 14:11:04,830 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer         - Tomcat initialized with port(s): 9100 (http)
+2023-05-10 14:11:04,851 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-127.0.0.1-9100"]
+2023-05-10 14:11:04,869 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service Tomcat
+2023-05-10 14:11:04,869 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet Engine: Apache Tomcat/8.5.6
+2023-05-10 14:11:04,986 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-05-10 14:11:04,986 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 1979 ms
+2023-05-10 14:11:05,180 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean           - Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-05-10 14:11:05,180 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean           - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-05-10 14:11:05,180 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean           - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-05-10 14:11:05,181 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean           - Mapping filter: 'requestContextFilter' to: [/*]
+2023-05-10 14:11:05,182 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean    - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2023-05-10 14:11:05,182 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean            - Mapping servlet: 'dispatcherServlet' to [/]
+2023-05-10 14:11:05,896 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter         - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8508c2: startup date [Wed May 10 14:11:03 IST 2023]; root of context hierarchy
+2023-05-10 14:11:05,987 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped "{[/trent_api/v1/process_cycle_count/process_count],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.tatatrent.cyclecount.rest.dto.Message> com.tatatrent.cyclecount.rest.controller.RestController.processCount(com.tatatrent.cyclecount.rest.dto.RequestDto) throws java.sql.SQLException
+2023-05-10 14:11:05,989 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped "{[/trent_api/v1/process_cycle_count/message]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tatatrent.cyclecount.rest.controller.RestController.getMessage()
+2023-05-10 14:11:05,992 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-05-10 14:11:05,993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-05-10 14:11:06,036 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping            - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-05-10 14:11:06,036 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping            - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-05-10 14:11:06,075 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    - Detected @ExceptionHandler methods in restExceptionHandler
+2023-05-10 14:11:06,105 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping            - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-05-10 14:11:06,342 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2023-05-10 14:11:06,425 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@126ad87, org.springframework.security.web.context.SecurityContextPersistenceFilter@20a98c, org.springframework.security.web.header.HeaderWriterFilter@140da5a, org.springframework.security.web.authentication.logout.LogoutFilter@12a35df, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@109df1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dc476a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11d898c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4aa9d8, org.springframework.security.web.session.SessionManagementFilter@1abae88, org.springframework.security.web.access.ExceptionTranslationFilter@1b44c4e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14c5390]
+2023-05-10 14:11:06,436 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1503cd6, org.springframework.security.web.context.SecurityContextPersistenceFilter@11b0349, org.springframework.security.web.header.HeaderWriterFilter@cd2721, org.springframework.security.web.authentication.logout.LogoutFilter@13c6076, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@e10dab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74b872, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f95503, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ca3b9e, org.springframework.security.web.session.SessionManagementFilter@c41c41, org.springframework.security.web.access.ExceptionTranslationFilter@499cad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cadc77]
+2023-05-10 14:11:06,660 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2023-05-10 14:11:06,782 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter                  - Registering beans for JMX exposure on startup
+2023-05-10 14:11:06,785 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter                  - Bean with name 'dataSource' has been autodetected for JMX exposure
+2023-05-10 14:11:06,793 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter                  - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2023-05-10 14:11:06,803 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler [http-nio-127.0.0.1-9100]
+2023-05-10 14:11:06,844 [restartedMain] INFO  o.apache.tomcat.util.net.NioSelectorPool           - Using a shared selector for servlet write/read
+2023-05-10 14:11:06,864 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer         - Tomcat started on port(s): 9100 (http)
+2023-05-10 14:11:06,873 [restartedMain] INFO  c.t.c.TrentCyclecountApiApplication                - Started TrentCyclecountApiApplication in 4.261 seconds (JVM running for 6.476)
+2023-05-10 14:11:50,094 [http-nio-127.0.0.1-9100-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-05-10 14:11:50,094 [http-nio-127.0.0.1-9100-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - FrameworkServlet 'dispatcherServlet': initialization started
+2023-05-10 14:11:50,156 [http-nio-127.0.0.1-9100-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - FrameworkServlet 'dispatcherServlet': initialization completed in 62 ms
+2023-05-10 14:11:50,205 [http-nio-127.0.0.1-9100-exec-1] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-0 - is starting.
+2023-05-10 14:11:52,819 [http-nio-127.0.0.1-9100-exec-1] ERROR c.t.c.r.exception.RestExceptionHandler             - MethodArgumentNotValidException: ApiError(code=400, status=400, timestamp=2023-05-10T08:41:52.818Z, message=Validation error, debugMessage=null, subErrors=[ApiValidationError(object=requestDto, field=ccKey, rejectedValue=, message=Cycle count key is required.)])
+2023-05-10 14:11:52,910 [http-nio-127.0.0.1-9100-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    - Resolved exception caused by handler execution: org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument at index 0 in method: public org.springframework.http.ResponseEntity<com.tatatrent.cyclecount.rest.dto.Message> com.tatatrent.cyclecount.rest.controller.RestController.processCount(com.tatatrent.cyclecount.rest.dto.RequestDto) throws java.sql.SQLException, with 1 error(s): [Field error in object 'requestDto' on field 'ccKey': rejected value []; codes [NotEmpty.requestDto.ccKey,NotEmpty.ccKey,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDto.ccKey,ccKey]; arguments []; default message [ccKey]]; default message [Cycle count key is required.]] 
+2023-05-10 14:52:13,806 [RMI TCP Connection(47)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-05-10 14:52:13,809 [RMI TCP Connection(47)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8508c2: startup date [Wed May 10 14:11:03 IST 2023]; root of context hierarchy
+2023-05-10 14:52:13,821 [RMI TCP Connection(47)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter                  - Unregistering JMX-exposed beans on shutdown
+2023-05-10 14:52:13,821 [RMI TCP Connection(47)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter                  - Unregistering JMX-exposed beans
+2023-05-10 14:52:13,822 [RMI TCP Connection(47)-127.0.0.1] INFO  com.zaxxer.hikari.pool.HikariPool                  - HikariPool-0 - is closing down.
+2023-05-10 14:52:28,259 [restartedMain] INFO  c.t.c.TrentCyclecountApiApplication                - Starting TrentCyclecountApiApplication on vaibhavbhatnagar with PID 8968 (C:\Users\vaibhav.bhatnagar\Documents\workspace\jdk_1.7\trent-cyclecount-api\target\classes started by vaibhav.bhatnagar in C:\Users\vaibhav.bhatnagar\Documents\workspace\jdk_1.7\trent-cyclecount-api)
+2023-05-10 14:52:28,265 [restartedMain] INFO  c.t.c.TrentCyclecountApiApplication                - The following profiles are active: dev
+2023-05-10 14:52:28,352 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40e6e2: startup date [Wed May 10 14:52:28 IST 2023]; root of context hierarchy
+2023-05-10 14:52:28,607 [background-preinit] INFO  o.h.validator.internal.util.Version                - HV000001: Hibernate Validator 5.3.6.Final
+2023-05-10 14:52:30,943 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer         - Tomcat initialized with port(s): 9100 (http)
+2023-05-10 14:52:30,967 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-127.0.0.1-9100"]
+2023-05-10 14:52:30,983 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service Tomcat
+2023-05-10 14:52:30,984 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet Engine: Apache Tomcat/8.5.6
+2023-05-10 14:52:31,104 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-05-10 14:52:31,104 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2752 ms
+2023-05-10 14:52:31,403 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean           - Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-05-10 14:52:31,404 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean           - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-05-10 14:52:31,404 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean           - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-05-10 14:52:31,404 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean           - Mapping filter: 'requestContextFilter' to: [/*]
+2023-05-10 14:52:31,406 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean    - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2023-05-10 14:52:31,406 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean            - Mapping servlet: 'dispatcherServlet' to [/]
+2023-05-10 14:52:32,377 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter         - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40e6e2: startup date [Wed May 10 14:52:28 IST 2023]; root of context hierarchy
+2023-05-10 14:52:32,473 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped "{[/trent_api/v1/process_cycle_count/process_count],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.tatatrent.cyclecount.rest.dto.Message> com.tatatrent.cyclecount.rest.controller.RestController.processCount(com.tatatrent.cyclecount.rest.dto.RequestDto) throws java.sql.SQLException
+2023-05-10 14:52:32,479 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped "{[/trent_api/v1/process_cycle_count/message]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.tatatrent.cyclecount.rest.controller.RestController.getMessage()
+2023-05-10 14:52:32,482 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-05-10 14:52:32,483 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping         - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-05-10 14:52:32,526 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping            - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-05-10 14:52:32,526 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping            - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-05-10 14:52:32,551 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    - Detected @ExceptionHandler methods in restExceptionHandler
+2023-05-10 14:52:32,600 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping            - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-05-10 14:52:32,953 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2023-05-10 14:52:33,083 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1969e63, org.springframework.security.web.context.SecurityContextPersistenceFilter@14e95ac, org.springframework.security.web.header.HeaderWriterFilter@ae27, org.springframework.security.web.authentication.logout.LogoutFilter@e2359, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@168781e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a5d30, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a884a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@178aab6, org.springframework.security.web.session.SessionManagementFilter@da814e, org.springframework.security.web.access.ExceptionTranslationFilter@19c713b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9045a0]
+2023-05-10 14:52:33,089 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d88d3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cf5261, org.springframework.security.web.header.HeaderWriterFilter@1e3ff47, org.springframework.security.web.authentication.logout.LogoutFilter@a3a46, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@177ccc3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2975c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f31d53, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@91f372, org.springframework.security.web.session.SessionManagementFilter@18ca1c0, org.springframework.security.web.access.ExceptionTranslationFilter@b4c4cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17ece1b]
+2023-05-10 14:52:33,345 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer                 - Unable to start LiveReload server
+2023-05-10 14:52:33,413 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter                  - Registering beans for JMX exposure on startup
+2023-05-10 14:52:33,415 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter                  - Bean with name 'dataSource' has been autodetected for JMX exposure
+2023-05-10 14:52:33,425 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter                  - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2023-05-10 14:52:33,437 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler [http-nio-127.0.0.1-9100]
+2023-05-10 14:52:33,446 [restartedMain] ERROR o.apache.coyote.http11.Http11NioProtocol           - Failed to start end point associated with ProtocolHandler [http-nio-127.0.0.1-9100]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:463)
+	at sun.nio.ch.Net.bind(Net.java:455)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:256)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:203)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:289)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:123)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:666)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1082)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1071)
+	at com.tatatrent.cyclecount.TrentCyclecountApiApplication.main(TrentCyclecountApiApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2023-05-10 14:52:33,447 [restartedMain] ERROR org.apache.catalina.core.StandardService           - Failed to start connector [Connector[HTTP/1.1-9100]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9100]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:256)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:203)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:289)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:123)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:666)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1082)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1071)
+	at com.tatatrent.cyclecount.TrentCyclecountApiApplication.main(TrentCyclecountApiApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:463)
+	at sun.nio.ch.Net.bind(Net.java:455)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 19 common frames omitted
+2023-05-10 14:52:33,462 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Pausing ProtocolHandler ["http-nio-127.0.0.1-9100"]
+2023-05-10 14:52:33,463 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Stopping service Tomcat
+2023-05-10 14:52:33,476 [restartedMain] INFO  org.apache.catalina.util.LifecycleBase             - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2023-05-10 14:52:33,477 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Stopping ProtocolHandler ["http-nio-127.0.0.1-9100"]
+2023-05-10 14:52:33,478 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Destroying ProtocolHandler ["http-nio-127.0.0.1-9100"]
+2023-05-10 14:52:33,485 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2023-05-10 14:52:33,490 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter             - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9100 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9100, or configure this application to listen on another port.
+
+2023-05-10 14:52:33,493 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40e6e2: startup date [Wed May 10 14:52:28 IST 2023]; root of context hierarchy
+2023-05-10 14:52:33,496 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter                  - Unregistering JMX-exposed beans on shutdown
+2023-05-10 14:52:33,496 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter                  - Unregistering JMX-exposed beans
